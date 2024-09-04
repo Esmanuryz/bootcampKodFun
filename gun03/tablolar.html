@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+
+<body>
+    <h2>Memleketler</h2>
+    <table border="1"> <!-- illegal kullanim css ile islerimiz kolaylasiyor -->
+
+        <tr><!--table row-->
+            <th rowspan="4">Yasanilan Sehirler</th> <!-- rowspan icin thead,tbody tfoot gibi ayirmamamiz lazim-->
+            <th> <!-- table heading -->
+                Plaka
+            </th>
+            <th>
+                Sehir
+            </th>
+            <th>
+                Neyiyle Meshur
+            </th>
+            <th>
+                Hangi Bolgede?
+            </th>
+            <th>
+                Denizi Var Mi?
+            </th>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Samsun</td>
+            <td>Bafra Pidesi</td>
+            <td>Karadeniz Bolgesi</td>
+            <td>Evet</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Izmir</td>
+            <td>Boyoz</td>
+            <td>Ege Bolgesi</td>
+            <td>Evet</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Tokat</td>
+            <td>Yaprak Sarmasi, Uzum</td>
+            <td>Karadeniz Bolgesi</td>
+            <td>Hayir</td>
+        </tr>
+        <br>
+
+    </table>
+    <h2>Filmler</h2>
+    <table border="1">
+        <thead>
+            <th>Film Adi</th>
+            <th>Yil</th>
+            <th>Puan</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kaybedenler Kulubu</td>
+                <td>2011</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>The GodFather</td>
+                <td>1972</td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>Resident Evil</td>
+                <td>2010</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="2">Ortalama Puan</th> <!--column span =sutuna yayilma-->
+            <th>8.23</th>
+        </tfoot>
+    </table>
+</body>
+
+</html>
