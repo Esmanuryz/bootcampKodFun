@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element  */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .favori {
+            border-left: 10px solid #007AFF;
+        }
+
+        /*  hiararshi yapisi, px pixel */
+        /*div p olursa cocugunun cocugu olanlari da etkiler, div>p olursa divin dogrudan cocugunu etkiler.*/
+        div>p {
+            margin: 0 70px;
+            text-align: justify;
+            font-size: 80%;
+            /*yazi boyutu ne olacaksa yuzde sekseni olsun demek.*/
+        }
+
+        div p {
+            font-family: "Comic Sans MS";
+        }
+
+        /* gruplama */
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        /* atrıbute selector */
+        [title] {
+            background-color: yellow;
+        }
+
+        li[title] {
+            font-style: italic;
+        }
+
+        /* h2 den sonra hemen gelen ıfade için */
+        h2+p {
+            text-indent: 40px;
+            background-color: green;
+        }
+
+        #memleket {
+            text-align: center;
+        }
+
+        /* after sozde elementi */
+        #memleket:after {
+            content: "(OTOPARK)";
+            font-weight: bold;
+        }
+
+        /* odd ya da 2n+1 tek sayıları secer */
+        li:nth-child(odd) {
+            background-color: aliceblue;
+        }
+
+        li:nth-child(6) {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px red;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Turkiye</h1>
+    <h2>Kutahya</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi sequi cupiditate tempore id, minus
+        harum! Vitae debitis nemo magnam exercitationem? Minima maiores culpa dolores assumenda impedit nostrum numquam
+        inventore?</p>
+    <p>Iusto eius saepe qui magnam culpa magni necessitatibus laborum rerum, repudiandae officia autem ad! Sed dolores
+        sequi ullam, rem nobis beatae aspernatur repellendus! Impedit explicabo molestiae voluptatem praesentium illo
+        fuga!</p>
+    <!-- div in mantikli olani (semantik olani header vb.)  anlamli kutucuk gibi bir anlami var. -->
+    <div style="border: 10px dashed red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, perspiciatis.</p>
+        <section>
+            <p>deneme <span title="seramik">merhaba</span> helloo</p>
+        </section>
+    </div>
+    <h3>Ilceler</h3>
+    <ul>
+        <li>Merkez</li>
+        <li>Altintas</li>
+        <li>Aslanapa</li>
+        <li title="dikkat antik kent icerir ">cavdarhisar</li>
+        <li class="favori">domanic</li>
+        <li>dumlupinar</li>
+        <li class="favori">emet</li>
+        <li>gediz</li>
+        <li>hisarcik</li>
+        <li>pazarlar</li>
+        <li>simav</li>
+        <li>saphane</li>
+        <!-- birden fazla class verilebilir, id gibi bir kez olmaz. -->
+        <li id="memleket" class="favori">tavsanli</li>
+    </ul>
+</body>
+
+</html>
