@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .onemli {
+            border-left: 10px solid green;
+        }
+
+        /* sonra gelen */
+        .onemli+li {
+            border-left: 10px solid red;
+        }
+
+        /* sonra gelenler */
+        .onemli~li {
+            border-left: 10px solid cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Doloremque, qui?</li>
+        <li class="onemli">Dolorum, cum?</li>
+        <li>Consectetur, necessitatibus?</li>
+        <li>Beatae, quas.</li>
+        <li>Ea, facere.</li>
+        <li>Optio, ullam.</li>
+        <li>Quos, eum?</li>
+        <li>Fugiat, doloribus?</li>
+    </ul>
+</body>
+
+</html>
