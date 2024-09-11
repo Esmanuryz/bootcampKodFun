@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float ile calismak ve float temizligi</title>
+    <style>
+        .hepsi {
+            border: 5px dashed black;
+        }
+
+        /* cift olanlari sola dayama 2n=even, 2n-1=odd */
+        div.kutu:nth-child(2n) {
+            float: left;
+        }
+
+        .kutu {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            color: white;
+            margin: 10px;
+            float: right;
+        }
+
+        /* Cozum: floatin kesilmesini istedigimiz float eden elemandan sonra bos bir div e bu sinif verilir. */
+
+        .temizlik {
+            clear: both;
+        }
+
+
+        /* Modern Cozum, block element oldugundan yalandan ekliyoruz. hepsi divinin kapanisindan hemen once sahte eleman ekliyor.*/
+        .hepsi::after{
+            content: "artik inaniyorum :))";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.hepsi>div.kutu*12>{kutu $} -->
+    <div class="hepsi">
+        <div class="kutu">kutu 1</div>
+        <div class="kutu">kutu 2</div>
+        <div class="kutu">kutu 3</div>
+        <div class="kutu">kutu 4</div>
+        <div class="kutu">kutu 5</div>
+        <div class="kutu">kutu 6</div>
+        <div class="kutu">kutu 7</div>
+        <div class="kutu">kutu 8</div>
+        <div class="kutu">kutu 9</div>
+        <div class="kutu">kutu 10</div>
+        <div class="kutu">kutu 11</div>
+        <div class="kutu">kutu 12</div>
+        <!-- <div class="temizlik"></div> -->
+
+    </div>
+</body>
+
+</html>

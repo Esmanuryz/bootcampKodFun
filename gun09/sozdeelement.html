@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sozde element</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        html {
+            font-size: 24px;
+        }
+
+        p::first-letter {
+            font-size: 3em;
+            /*olacak degerin 3 kati 1em normal boyut + 300% */
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        p::after {
+            content: "";  
+            display: block;
+            clear: both;
+        }
+
+        main {
+            background-color: yellow;
+            max-width: 600px;
+            /*    y     x   ekseni  */
+            margin: 60px auto 20px;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+
+
+
+        }
+
+
+        @media(max-width:720px) {
+            main {
+                margin: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore quibusdam culpa, voluptas minima
+            sit
+            ut corporis voluptatibus doloremque eaque libero expedita, praesentium necessitatibus est dolorem nihil
+            beatae
+            commodi eveniet?</p>
+        <p>Fugiat unde quod dolor! Debitis illum molestiae, ipsam praesentium voluptatum esse quo velit! Nobis vel
+            distinctio qui sed! Dicta, error facilis eos ratione cum architecto voluptatibus est incidunt laudantium
+            totam.
+        </p>
+        <p>Corporis similique esse ex nisi, perspiciatis sint reiciendis! Numquam ullam quam, dolor eaque iusto facilis
+            fugiat dolore facere similique magnam ab vero quaerat nemo nostrum commodi sapiente sit nobis dolorum.</p>
+        <p>Eum ea labore iure eius aliquam impedit reiciendis minima similique et quos ipsum quibusdam assumenda earum,
+            enim
+            cumque. At ipsa tenetur tempora, dolor omnis consequatur cupiditate facere eaque voluptates aperiam.</p>
+    </main>
+</body>
+
+</html>

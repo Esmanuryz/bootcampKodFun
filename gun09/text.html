@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        p {
+            line-height: 1.5;
+            /*satir yuksekligi*/
+            letter-spacing: 2px;
+            /*harf arasi*/
+            word-spacing: 6px;
+            /*kelime arasi*/
+            text-align: justify;
+            /*iki kenara dayali*/
+            text-indent: 30px;
+            /*paragraf basi girisler*/
+            text-shadow: 5px -5px 5px rgba(0, 0, 0, 0.804);
+            /*  x,y,blur,color       ,
+            text golgeli eksili artili degerler kullanilabilir, sayilari buyulterek azaltarak neyin nerede oldugunu daha net anlayabiliriz.*/
+        }
+
+        /*sozde sinif sozde element?*/
+        p:nth-child(1) {
+            text-decoration: underline line-through overline;
+            text-transform: uppercase;
+        }
+
+        p:nth-child(2) {
+            text-decoration: line-through;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odit officia aliquid consequuntur non, similique
+        iure. Quaerat ratione accusantium dolorum! Unde, repellendus quos aspernatur cupiditate quod veritatis optio
+        quaerat. Tempore.</p>
+    <p>Necessitatibus magnam optio totam nulla quidem officia quisquam, vel blanditiis possimus alias atque.
+        Reprehenderit libero deserunt molestiae officiis at recusandae tenetur vitae corporis facilis doloribus,
+        dignissimos culpa deleniti similique doloremque.</p>
+    <p>Suscipit delectus, alias cum maxime saepe itaque eaque accusamus, eius, eum deserunt rem quod? Dicta inventore
+        distinctio similique fugit? Nulla atque impedit, culpa quam labore saepe aspernatur praesentium? Reprehenderit,
+        eum.</p>
+    <p>Delectus non accusantium, eaque quisquam veritatis, quibusdam modi distinctio odio hic placeat voluptatem fuga
+        obcaecati nihil autem perferendis aut voluptatum aperiam velit, repudiandae voluptate sit vero suscipit illum.
+        Adipisci, libero!</p>
+</body>
+
+</html>
