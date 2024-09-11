@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*div elementlerine asagidaki ozellikleri tasiyacak sekilde css verin:
+    1.toplam yukseklik 200px
+    2.toplam genislik 200px
+    3. arka plan  rengi 
+    4.20px padding (dolgu)
+    5.10px border
+    6. 15px margin
+    7. yazir rengi beyaz (color) 
+    */
+    *{
+        box-sizing: border-box;
+      
+    }
+
+     div{
+        background-color: rgb(3, 3, 2);
+            border: 10px solid rgb(214, 232, 77);
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            color: white;
+            display: flex;
+            align-items: center; /*dikey*/justify-content: center; /*yatay*/
+            float: left;
+             outline: 10px solid blue;/*genislik yukseklik yapmaz border disina yapilir.  
+             outline-offset:5px; */
+
+     }
+main{
+    border: 10px solid red;
+}
+  
+    
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <!-- probleeemm:
+     main kutusunun kenarligi icindeki her seyi
+     cevrelemesi gerekirken neden su an cevrelemiyor? cevabi 
+     float konusunda gelecek -->
+    <main>
+    <!-- div*10>{Kutu $} -->
+    <div>Kutu 1</div>
+    <div>Kutu 2</div>
+    <div>Kutu 3</div>
+    <div>Kutu 4</div>
+    <div>Kutu 5</div>
+    <div>Kutu 6</div>
+    <div>Kutu 7</div>
+    <div>Kutu 8</div>
+    <div>Kutu 9</div>
+    <div>Kutu 10</div>
+</main>
+</body>
+</html>
