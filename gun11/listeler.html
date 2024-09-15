@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeler</title>
+
+    <style>
+        h4 {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        .still1 {
+            list-style: none;
+        }
+
+        .still2 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .still3 {
+            list-style-type: none;
+        }
+
+        .still4 {
+            /* Default */
+            /* list-style-position:outside; */
+        }
+
+        ul.still4>li {
+            border: 1px solid black;
+        }
+
+        .still5 {
+            /* Default */
+            /* list-style-position:outside; */
+        }
+
+        ul.still5>li {
+            border: 1px solid black;
+        }
+
+        ul.still6 {
+            list-style-image: url(pikachiii.png);
+        }
+
+
+        ul.still7>li::marker {
+            color: red;
+            font-size: 2em;
+        }
+
+        ul.still8 {
+            list-style: none;
+            padding: 0;
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        ul.still8>li {
+
+
+
+            /* en son konusan aliyor border bottom ve border yer degiisirse isler degisir. */
+            padding: 12px;
+            border-bottom: 2px solid red;
+        }
+
+
+        ul.still8>li:last-child {
+            border-bottom: none;
+
+        }
+
+        ul.still8>li:nth-child(2n) {
+            background-color: yellow;
+
+
+        }
+
+        ul.still8>li:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Extravaganza Bol Malzemos Ultra Plus Premium Pro Max Her Sey Ultra Dahil Sahibinden Doktordan 0km Organik
+        Hatasiz Boyasiz Alana Hayirli Olsun!</h4>
+    <ul class="still8">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+    <h4>Marker Ozellestirme</h4>
+    <ul class="still7">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+    <h4>Marker Resmi</h4>
+    <ul class="still6">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+    <h4>Marker pozisyonlari(ic)</h4>
+    <ul class="still5">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+    <h4>Marker pozisyonlari(Dis)</h4>
+    <ul class="still4">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+    <h4>List Stil Tipleri</h4>
+    <ul class="still3">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+
+
+
+
+    <h4>Stillerinden Arindirilmis</h4>
+    <ul class="still2">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+    <h4>Marker'siz Liste</h4>
+    <ul class="still1">
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+    <h4>Standart Gorunum</h4>
+    <ul>
+        <li>Cag Kebap</li>
+        <li>Lahmacun</li>
+        <li>Doner Durum</li>
+        <li>Manti</li>
+        <li>Makarna</li>
+        <li>Pideli Kofte</li>
+    </ul>
+
+
+</body>
+
+</html>

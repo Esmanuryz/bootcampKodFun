@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozisyonlar 2</title>
+    <style>
+        .kutu {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .poke {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /*sayfanin en kosesinde gozukuyor.!!!*/
+        /*mutlak pozisyonlarin yapilan bir elementin konumu normalde tarayicinin gorunen kismina gore yapilir. Ancak parent elentinde position: relative kurali varsa onun sinirlari dahilinde konumlama yapilacaktir.*/
+
+        .uzun {
+            position: relative;
+        }
+
+        /*babasina gore yerlesiyor*/
+        .agac {
+            position: absolute;
+            left: calc(50% - 50px); /*BOSLUK KOYMAYI UNUTMA*/
+            top: calc(50% - 50px);
+            z-index: -1;
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Baslik</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iure sint quo! Reiciendis, facilis aliquam
+        placeat nemo rem quidem deleniti consequuntur! Dignissimos, mollitia perspiciatis aliquid quis minima odit
+        facere voluptatem?</p>
+    <div class="kutu">
+        <img src="pikachiii.png" alt="Pokemon" class="poke">
+    </div>
+    <p class="uzun">
+        <img class="agac" src="palm-tree.png" alt="palmiye" height="100">
+        Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Excepturi odio
+        officiis
+        quibusdam est praesentium laborum eum. Maxime, mollitia accusamus. Alias incidunt similique voluptates
+        recusandae illo delectus beatae nobis nesciunt, nihil tempore natus eligendi, architecto eaque dolores sed
+        voluptatum ut voluptatem repellendus perspiciatis optio soluta asperiores. Eius, doloremque fugiat accusamus
+        ipsa optio, error magni sint ab nisi nostrum soluta voluptate ex, quos a molestias. Voluptate aliquid dolore
+        exercitationem. Tempora obcaecati eius provident alias maiores ut itaque expedita dicta sunt sequi ipsum quasi
+        nihil illum est ex a aut soluta, aperiam corrupti saepe. Ullam repudiandae asperiores dignissimos id quisquam
+        illo, vero praesentium debitis voluptatibus mollitia, est fugit soluta laboriosam ducimus iusto laborum harum
+        iure nobis amet, magni temporibus quae ex. Distinctio dignissimos soluta debitis pariatur accusamus dolore, aut
+        cumque nisi libero optio maxime quibusdam itaque in veniam dolorem reprehenderit molestias unde? Quidem modi
+        voluptas rem alias, commodi possimus. Cupiditate velit possimus dicta!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde tempore soluta totam suscipit earum rerum
+        repellat error quisquam repellendus laudantium praesentium laborum, in iste, eum animi voluptatem hic fugit!</p>
+    <p>Ipsum asperiores ipsam nihil veniam dolor consequatur laborum esse, eveniet deleniti enim laudantium tenetur,
+        cumque quia fugiat soluta fuga modi magni ad officiis illo corrupti incidunt provident quisquam? Deserunt,
+        expedita.</p>
+    <p>Veniam omnis optio repudiandae officiis tempora illum est. Necessitatibus quae impedit ex porro veniam, ab
+        voluptatibus. Molestias, aliquam nemo totam voluptatibus quibusdam iure eum inventore vitae culpa deleniti,
+        blanditiis sunt?</p>
+    <p>Perspiciatis, optio. Explicabo ab magnam ex fuga nemo dolores exercitationem voluptates alias, consectetur iusto
+        maxime quam quasi qui hic nisi, praesentium sed tenetur dolorum perferendis voluptate veritatis molestias
+        reiciendis iste?</p>
+    <p>Delectus, odit beatae similique repellat, blanditiis consequuntur sint, vel adipisci harum molestias illum
+        asperiores sequi dolorem maiores quae fugit minima deserunt aut. Unde reprehenderit nihil numquam corporis,
+        perspiciatis eaque voluptatem?</p>
+    <p>Amet quasi expedita aut quae, fugiat consectetur. Dicta, sunt accusamus officia, id adipisci suscipit
+        necessitatibus tenetur cum minus perferendis reiciendis alias ex, fugiat iure quaerat incidunt magnam ad fugit?
+        Eos.</p>
+    <p>Tempore tenetur est eveniet suscipit harum perspiciatis numquam dolorem aspernatur debitis dolores nostrum
+        dolorum nobis aut libero iste blanditiis, unde officia expedita molestiae laudantium, soluta, corporis
+        consequuntur error quisquam. Minima!</p>
+    <p>Dolorum provident impedit, iusto tenetur delectus libero dignissimos voluptas incidunt ad sequi sed dolores ex.
+        Assumenda amet magnam deserunt reprehenderit provident praesentium, consequuntur iste id pariatur! Numquam
+        laudantium omnis iusto!</p>
+    <p>Repellendus repellat deserunt, nemo, perspiciatis numquam rem quod, eum totam sit hic consectetur. Atque
+        perferendis vel voluptates debitis delectus fugit, sequi corrupti a rerum est expedita! Earum pariatur officiis
+        quasi.</p>
+    <p>Iusto dolor quidem, commodi amet, accusantium nesciunt nostrum veniam est provident illo neque, praesentium
+        minus. Itaque at consequatur quaerat voluptatum quia necessitatibus assumenda voluptatem excepturi quam, sit ab
+        debitis optio.</p>
+</body>
+
+</html>
