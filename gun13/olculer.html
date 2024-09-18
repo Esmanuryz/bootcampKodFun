@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> <!--16px-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olculer</title>
+    <style>
+        html {
+            /*1 remi belirleyen kural*/
+            font-size: 20px;
+
+        }
+
+        .cubuk1 {
+            height: 20px;
+            background-color: purple;
+            width: 96px;
+        }
+
+        .cubuk2 {
+            height: 20px;
+            background-color: pink;
+            width: 6rem;
+            /*html de ki font-size*width degeri  */
+            /*root em*/
+        }
+
+        .cubuk3 {
+            height: 20px;
+            background-color: yellow;
+            width: 6em;
+        }
+
+        .cubuk2-kapsayici {
+            font-size: 10px;
+        }
+
+        .cubuk3-kapsayici {
+            /*10px*/
+            font-size: 10px;
+        }
+
+        /*1px: ekrandaki en ufak nokta (onemli aciklama: mobil cihazlarda cihaza gore olcekleme saglamak icin viewport meta tagi kullanilir ve px hesaplamasi 2-3 noktaya karsilik gelecek sekilde hesaplanabilir.)
+
+1rem: html kok elementine font-size degeridir. Bircok tarayicida html elementi 16px varsayilan bir font degerine sahiptir. 20*1.5 gibi bir ifade
+
+1em: bir elementin parent'indan miras aldigi font-size'ina karsilik gelir. (sen deger verirsen kendisininkini alir parent miras mevzusu "default gibi")
+*/
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Olcu Birimleri</h1>
+    <h2>Genisligi 96px olan bir div</h2>
+    <div class="cubuk1"></div>
+    <div class="cubuk2-kapsayici">
+        <h2>Genisligi 6rem olan bir div</h2>
+        <div class="cubuk2"></div>
+    </div>
+    </div>
+    <div class="cubuk3-kapsayici">
+        <h2>Genisligi 6em olan bir div</h2>
+        <div class="cubuk3"></div>
+    </div>
+    <hr>
+
+<style>
+    .soru1{
+        font-size: 4px;
+    }
+    .soru1-a{
+        font-size: 1.5em;
+    }  .soru1-b{
+        font-size: 1.5em;
+    }  .soru1-c{
+        font-size: 1.5em;
+    }
+</style>
+
+
+    <div class="soru1"> <!--4-->
+        <div class="soru1-a">  <!--6-->
+            <div class="soru1-b">   <!--9-->
+                <div class="soru1-c">   <!--13.5-->
+                    MOLA YAKLASIYOR!
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+
+
+</body>
+
+</html>
