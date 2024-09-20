@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>
+        .konteynir {
+            border: 10px dashed black;
+            height: 300px;
+            display: flex;
+            /*icindeki kutulari etkiler, cocuklarini etkiler. COCUKLARI ESNEK YERLESECEK.*/
+            flex-direction: row;
+            /*kutularin siralanmasi yonu belirtilir., default=row, row, row-reverse, column , column-reverse*/
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            /*ozelliklerine bak! flex-start, flex-end, center, space-around, space-evenly, space-between*/
+            align-items: center;
+            /*cok fazla kombinasyonu var, stretch,baseline (alt cizgiye (sinira) gore siralar), center, flex-start, flex-end */
+        }
+
+        .kutu1 {
+            background-color: yellow;
+        }
+
+        .kutu2 {
+            background-color: greenyellow;
+
+        }
+
+        .kutu3 {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="konteynir">
+        <div class="kutu1">Lorem, ipsum dolor.</div>
+        <div class="kutu2">Laborum</div>
+        <div class="kutu3">Modi, magnam reiciendis.</div>
+    </div>
+</body>
+
+</html>
