@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatorler</title>
+</head>
+
+<body>
+    <!-- ! tab yapmadan da script acilabilir. -->
+    <script src="../ortak/yaz.js"></script>
+    <script>
+        //operatorler, taraflar arasinda
+        //belli islemler yaparak
+        //yeni sonuclar urettiren sembollu araclardir. 
+
+        //aritmatik operatorler: + - * / % **
+        yaz(4 + 4); //toplama islemi
+        yaz("Esmanur");
+        ciz("Yorulmaz");
+        //string concatination "4" + 4 = "44" son deger string olur.
+        yaz(4 + 4 + "4" + 4 + 4);
+
+        //carpma islemi
+        yaz(4 * 3);
+
+        //carpma islemi taraflarinda sayi ister 
+        //string varsa once sayiya donusturulur.
+        yaz("2" * "4");
+
+
+        //() operatoru metotlari/fonksiyonlari cagirmaya (call) yarar.
+        ciz();
+
+        let f = ciz;
+
+        //. operatoru bir nesnenin uyelerine (method/property) erismeyi ve degistirmeyi saglar.
+        yaz(document.title); //eristik elde ettik.
+        document.title = "adana kebap +kola +magnolia" //guncelledik
+        yaz(document.title);
+
+        //bir degiskenin icindeki degere ekleme yapma kisayolu
+        let a = 3;
+        //a = a + 4; //a ya 4 ekleyip a ya esitle
+        a += 4; // a = a + 4; muadili
+        yaz(a);
+
+        //BIR SORU
+        let s1 = 2;
+        s1 *= s1
+        yaz(s1);
+
+        //IKINCI SORU
+        let s2 = 2 + 3 * 4;
+        yaz(s2);
+
+        //UCUNCU SORU
+        let s3 = (2 + 3) * 4;
+        yaz(s3);
+
+        //DORDUNCU SORU
+        let s4 = "falanca" + 4 + 3;
+
+        yaz(s4);
+
+        //BESINCI SORU
+        let s5 = 3 + 4 + "falanca";
+        yaz(s5);
+
+        //ALTINCI SORU
+        let s6 = "2" + 4 * 3;
+        yaz(s6);
+
+        //YEDINCI SORU
+        let s7 = ("2" + 4) * 3;
+        yaz(s7);
+    </script>
+
+    <button onclick="f()">Cizgi cek</button>
+
+</body>
+
+</html>

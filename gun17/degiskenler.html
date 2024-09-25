@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degiskenler (JS)</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let a = 3; //'var' la da degisken kurulur.
+        document.write("a"); 
+        document.write('a'); 
+        document.write(a +" ");
+        a=4.5; //ondalikli sayi da saklanir, FONKSIYON DA SAKLANABILIR!!!!
+        document.write(a);
+
+        let b = alert; //function
+        b("Meryos inanmiyorrr");
+
+        let c ="Esmanur"; //string
+        document.write(c);
+
+        let d = true; //boolean
+
+        //basina const eklenirse bu ifade sonradan degistirilemez.
+
+        let e = document; //object , null da bir objecttir.
+        document.write(e.title)
+
+        let f; //undefined
+
+        document.write("<hr>");
+        document.write("<h3>Degisken Turleri</h3>");
+        document.write(typeof a);
+        document.write("<br>");
+        document.write(typeof b);
+        document.write("<br>");
+        document.write(typeof c);
+        document.write("<br>");
+        document.write(typeof d);
+        document.write("<br>");
+        document.write(typeof e);
+        document.write("<br>");
+        document.write(typeof f);
+
+    </script>
+</body>
+
+</html>
