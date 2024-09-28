@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment & Decrement</title>
+</head>
+
+<body>
+    <script src="../ortak/yaz.js"></script>
+    <script>
+        let a = 1;;
+
+        a++; // a +=1 arasindaki fark?
+        ciz(a); //2
+        a++; //a=3 degerini kullanim sonrasi arttirir.
+        ciz(a++); //3
+        //a = 4
+        ciz(a); //4
+
+
+        let h = 4;
+        h = h++;
+        ciz(h);
+        temizle();
+        let j = 5;
+        j *= j++; //j =j*j++;
+        ciz(j);
+        //debugger; kodu durduruyor, f9 ile anlik degerlerini gorebiliriz.
+        let l = 3;
+        // once degerleri yerlestir
+        // 3  3  4
+        l = l + l * l++;
+        yaz(l)
+
+        //mantiksal operator sonrasi bak.
+        let n = 3;
+        let sonuc = n++ == 3 || ++n == 5;
+        yaz(sonuc);
+        ciz(n);
+
+        let o = 40;
+
+        yaz(o < 39 && ++o == 41);
+        ciz(o);
+
+        yaz(o > 39 && ++o == 41);
+        ciz(o);
+
+    </script>
+
+
+</body>
+
+</html>
