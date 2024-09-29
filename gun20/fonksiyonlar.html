@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar</title>
+</head>
+
+<body>
+
+    <script src="../ortak/yaz.js"></script>
+    <!--src=".." bir ust dizine cikar, relative path, tek nokta olursa bulunan dizin olur.-->
+    <script>
+        /*
+        Dort cesit fonksiyonu ornekleyelim
+        1.parametre almayan deger dondurmeyen
+        2.parametre almayan deger donduren
+        3.parametre Alan deger dondurmeyen
+        4.parametre Alan deger donduren
+        */
+
+
+
+
+        //parametre alan deger dondurmeyen isci fonk, renk kodu ile arka plani boyar   
+        function arkaplaniBoya(renk) {
+            document.body.style.background = renk;
+        }
+
+        arkaplaniBoya("linear-gradient(to right, black, powderblue)");
+
+        //parametre almayan deger donduren
+        function ayinGunu() {
+            let suAn = new Date();
+            return suAn.getDate();
+        }
+
+        let gun = ayinGunu();
+        ciz("Bugun ayin " + gun + ". gunudur.")
+
+
+        function ekranaTarihiVeSaatiYazdir() {
+            let suAn = new Date();
+            ciz(suAn.toLocaleString("tr")); //tr yazim modu gun/ay/yil seklinde yapar.
+        }
+        ekranaTarihiVeSaatiYazdir();
+
+
+
+
+
+
+
+
+
+
+        //aldiginin bir fazlasini dondurur. 
+        //matematikte "f(x)=x+1" gibi
+        //parametre alan ve deger donduren
+        function birFazlasi(x) {
+            return x + 1;
+        }
+
+        let sayi = 3;
+        sayi = birFazlasi(sayi);
+        ciz(sayi); //4
+
+
+    </script>
+</body>
+
+</html>
